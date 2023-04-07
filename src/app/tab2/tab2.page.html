@@ -1,0 +1,35 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Лабораторна робота 1
+    </ion-title>
+  </ion-toolbar>
+  <ion-toolbar>
+    <ion-title>
+      Виконав студент групи КН-31 Іващенко Ілля
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Завдання 2</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p class="p_background">На заданомупроміжку чисел [a,b] знайдіть добуток чисел, кратних 6.</p>
+      <ion-item>
+        <ion-label position="floating">Перше число (a)</ion-label>
+        <ion-input type="number" id="a" value="1" #Inputa></ion-input>  
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Друге число (b)</ion-label>
+        <ion-input type="number" id="b" value="2" #Inputb></ion-input>  
+      </ion-item>
+      <ion-button expand="block" (click)="ras(Inputa.value,Inputb.value)">Розрахунок</ion-button>
+      <ion-item>
+        <p>Результат обчислень {{c}}</p>
+      </ion-item>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
